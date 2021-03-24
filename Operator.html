@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS 연산자</title>
+    <style>
+        fieldset.result {
+            width: 400px;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 40px;
+            border: 4px solid #08f;
+            margin: 40px;
+        }
+
+        span,
+        button {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        div#ins {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        #ins input {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+
+    <h1>1. 산술연산자(feat. 제이쿼리 사용)</h1>
+
+    <div id="ins">
+    입력 1 <input type="text" id="number1" size="4">
+    입력 2 <input type="text" id="number2" size="4">
+    </div>
+
+
+    <button id="goResult" type="button">
+        결과확인
+    </button>
+
+    <fieldset class="result">
+        <legend>나머지 연산</legend>
+        <span id="addRes"></span>
+    </fieldset>
+
+</body>
+
+</html>
+
+<!--레전드의 내용을 덧,뺄,곱,나눗,나머지셈으로 바꾸고 그 때마다 js의 parseInt 사이 기호를 바꾸면 적용됨-->
